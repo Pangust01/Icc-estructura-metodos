@@ -46,15 +46,29 @@ public class MetodosOrdenamiento {
                 }
             }
         }
-        
+
         return arreglo;
     }
     public int[] sortBySelection(int[] arreglo){
+        int tamanios = arreglo.length;
+        for (int i = 0; i < tamanios - 1; i++) {
+            // tenemos que encotrar el menor
+            int index_menor = i;
+            for (int j = i + 1; j < tamanios; j++) {
+                if (arreglo[j] < arreglo[index_menor]) {
+                    index_menor = j;
+                }
 
+            }
+            // intercambiar el menor
+            int aux = arreglo[index_menor];
+            arreglo[index_menor] = arreglo[i];
+            arreglo[i] = aux;
+        }
         return arreglo;
     }
     public int[] sortByInsertion(int[] arreglo){
-
+        
         return arreglo;
     }
     public void sortByArreglo(int[] arreglo){
