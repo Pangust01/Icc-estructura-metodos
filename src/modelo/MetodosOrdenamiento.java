@@ -3,6 +3,13 @@ package modelo;
 import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 public class MetodosOrdenamiento {
+    
+    //#constructor vacio
+    // no tiene void o retorno
+    // tiene el mismo nombre de la clase
+    // y empieza con mayuscula
+    // Se va a ejecutar automaticamente cunado instancie la clase
+
     /*Metodo que devuelve un arreglo de enteros ordenados por burbuja
      * Metodo que devuelve un arreglo de enteros ordenados por seleccion
      * Metodo que devuelve un arreglo de enteros ordenados por insercion
@@ -39,6 +46,7 @@ public class MetodosOrdenamiento {
                 }
             }
         }
+        
         return arreglo;
     }
     public int[] sortBySelection(int[] arreglo){

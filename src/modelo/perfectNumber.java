@@ -22,12 +22,16 @@ public class perfectNumber {
             if (isPrime(sumaCount)) {
                 double multiPoten=(count*sumaCount);
                 if (multiPoten==number) {
-            
                     return true;
                 }
             }
         }
         
         return false;
+    }
+    public static void main(String[] args) {
+        perfectNumber obj1 = new perfectNumber();
+        boolean numPerfect=obj1.isPerfectNumber2(455568934.0);
+        System.out.println("Su numero es perfecto?: "+numPerfect);
     }
 }
